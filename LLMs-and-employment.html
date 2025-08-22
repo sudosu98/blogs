@@ -155,29 +155,24 @@ title: My Take on LLM and Employment
         <p><strong>Weights:</strong></p>
         <p>4,000,000,000,000 weights × 1 byte = 4,000 GB (≈4.0 TB)</p>
 
-        <p><strong>KV per token scaling:</strong></p>
-        <p>Reference: 2.5 MB/token @ 70B</p>
-        <p>Scale factor = (4T / 70B)^(2/3) ≈ 14.8357</p>
-        <p>KV per token ≈ 2.5 × 14.8357 ≈ 37.09 MB/token</p>
+        <p><strong>KV Cache:</strong></p>
+        <p>Assuming ~80 layers, 128 heads, 128 head_dim for 4T model</p>
+        <p>KV = 2 × batch × seq_len × layers × heads × head_dim × precision</p>
+        <p>KV = 2 × 1 × 4,500 × 80 × 128 × 128 × 2 bytes ≈ 11.8 GB</p>
 
-        <p>
-          Total KV for 4,500 tokens ≈ 37.09 MB × 4,500 ≈ 167,401.6 MB ≈ 163.3 GB
-        </p>
+        <p>Overhead ≈ 15% of (weights + KV) ≈ 602 GB</p>
 
-        <p>Overhead ≈ 15% of (weights + KV) ≈ 624.5 GB</p>
-
-        <p><strong>Total memory</strong> ≈ 4,787.8 GB (≈4.79 TB)</p>
-        <p>Min H100s (80GB each) = ceil(4,787.8 / 80) = 60 GPUs</p>
+        <p><strong>Total memory</strong> ≈ 4,614 GB (≈4.61 TB)</p>
+        <p>Min H100s (80GB each) = ceil(4,614 / 80) = 58 GPUs</p>
 
         <p>
           <strong>Total FLOPs</strong> = 2 × params × tokens = 36,000 TFLOPs
         </p>
-        <p>Cluster TFLOPS = 400 × 60 = 24,000 TFLOPs</p>
-        <p>Latency ≈ 36,000 / 24,000 = 1.5 s</p>
+        <p>Cluster TFLOPS = 400 × 58 = 23,200 TFLOPs</p>
+        <p>Latency ≈ 36,000 / 23,200 ≈ 1.55 s</p>
 
         <p>
-          <strong>Energy</strong> = Power × Time = (600 × 60) W × 1.5 s = 54,000
-          J = 15 Wh
+          <strong>Energy</strong> = Power × Time = (600 × 58) W × 1.55 s = 53,736 J ≈ 14.9 Wh
         </p>
         <p>Cost @ $0.12/kWh in USA ≈ $0.0018 / request</p>
       </div>
