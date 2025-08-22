@@ -3,9 +3,249 @@ layout: default
 title: My Take on LLM and Employment
 ---
 
-<section class="p-4 mx-auto mt-10">
-  <h2 class="text-3xl font-bold">LLM's and Employment?</h2>
-  <p class="mt-4 text-gray-600">
-    I'm currently unemployed, will be publishing when I get employed.
-  </p>
-</section>
+<div class="flex flex-col md:flex-row w-screen overflow-x-hidden">
+  <!-- Left Section -->
+  <section class="p-4 mt-10 w-full md:w-1/2 flex flex-col items-start">
+    <h2 class="text-3xl font-bold">LLM's and Employment?</h2>
+    <p>Aug 21, 2025</p>
+    <p class="mt-4">
+      Welcome to the age of LLMs. Half the population thinks LLMs think just
+      because they implemented a
+      <strong class="text-blue-600">&lt;Loader/&gt;</strong> after every prompt
+      that says “thinking...”. I’m not going to lie— it does give the appearance
+      of thinking.
+    </p>
+    <blockquote class="mt-2">
+      <strong><i>Thinking</i></strong> - ideas or opinions about something.
+    </blockquote>
+    <p class="mt-2">
+      <i class="font-bold">AI Development = Speed + Thoughtful</i> decisions? In
+      my opinion using AI in my development life cycle did drastically improve
+      at least one of the two while often contradicting each other. What I mean
+      by this is, I often found myself being fast with it or being thoughtful
+      with it and not both. <i>So the balance was missing</i>.
+    </p>
+    <p class="mt-2">
+      Have you ever had a super junior intern working under you, and no matter
+      how much you explained, they’d just not understand? It’s not because you
+      cannot explain it well enough, nor because they are dumb enough to not
+      understand. It’s just that their brain has not yet been exposed to the
+      problem at hand — and it is way above their current understanding of
+      software. That is the state of LLMs these days. In order to make them
+      understand, people started using RAG, fine-tuning, reinforcement learning,
+      and so on, to improve responses. But with all this being implemented and
+      discussed — at the end of the day, it is predicting, not thinking. The
+      reason LLM's appear to be thinking is beacuse they are trained on some
+      high level english grammar and have enough context to appear to have
+      emotions. Below you can see how it predicts tokens depending on this
+      controversial paragraph.
+    </p>
+    <div class="mt-2">
+      <img
+        src="static/when-i-asked-it-to-be-contrversial.png"
+        alt="when-i-asked-it-to-be-contrversial"
+        class="border-2 w-full h-auto"
+      />
+      <p class="italic text-gray-400 text-sm">
+        When I asked ChatGPT to fix the above paragraph and asked it to keep it
+        controversial, it started with "Got it 😏"!
+      </p>
+    </div>
+
+    <p class="mt-4 font-bold text-lg">
+      With all that being said, how is the employment scenario looking? Recently
+      OpenAI launched its ₹399 / month plan in India and why is it so big? Let's
+      do a hypothetical calculation which might be wrong but just to get an
+      idea.
+    </p>
+    <div class="mb-4.5 mt-2">
+      <h3 class="m-0 mb-1.5 font-semibold underline">Definitions :</h3>
+      <div class="text-muted text-sm">
+        Parameters, precision, KV cache, FLOPs, latency, energy
+      </div>
+      <ul class="mt-2 space-y-1">
+        <li class="text-sm">
+          <strong>Weights</strong>: GPU memory holding model parameters.
+        </li>
+        <li class="text-sm">
+          <strong>KV cache</strong>: per-token attention state stored during
+          decoding.
+        </li>
+        <li class="text-sm">
+          <strong>FLOPs</strong>: total floating-point operations (2 × params ×
+          tokens used here).
+        </li>
+        <li class="text-sm">
+          <strong>Latency</strong>: estimated request processing time on the
+          cluster.
+        </li>
+        <li class="text-sm">
+          <strong>Energy</strong>: power × time (reported in Wh and kJ).
+        </li>
+      </ul>
+    </div>
+    <div class="mb-4.5 mt-2">
+      <h3 class="m-0 mb-1.5 font-semibold underline">
+        Selected configuration :
+      </h3>
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse mt-2 text-sm">
+          <tbody>
+            <tr class="border-b border-dashed border-black">
+              <th class="py-2 px-2.5 text-left text-muted font-semibold">
+                Model
+              </th>
+              <td class="py-2 px-2.5">4.0 × 10<sup>12</sup> params (4T)</td>
+            </tr>
+            <tr class="border-b border-dashed border-black">
+              <th class="py-2 px-2.5 text-left text-muted font-semibold">
+                Weights precision
+              </th>
+              <td class="py-2 px-2.5">INT8 (1 byte / weight)</td>
+            </tr>
+            <tr class="border-b border-dashed border-black">
+              <th class="py-2 px-2.5 text-left text-muted font-semibold">
+                KV cache precision
+              </th>
+              <td class="py-2 px-2.5">FP16 (2 bytes / element)</td>
+            </tr>
+            <tr class="border-b border-dashed border-black">
+              <th class="py-2 px-2.5 text-left text-muted font-semibold">
+                Tokens (prompt / gen)
+              </th>
+              <td class="py-2 px-2.5">
+                4,000 in / 500 out → <strong>4,500 total</strong>
+              </td>
+            </tr>
+            <tr class="border-b border-dashed border-black">
+              <th class="py-2 px-2.5 text-left text-muted font-semibold">
+                Hardware
+              </th>
+              <td class="py-2 px-2.5">H100 SXM 80 GB (assume 80 GB usable)</td>
+            </tr>
+            <tr class="border-b border-dashed border-black">
+              <th class="py-2 px-2.5 text-left text-muted font-semibold">
+                Throughput assumption
+              </th>
+              <td class="py-2 px-2.5">400 TFLOPS / GPU sustained</td>
+            </tr>
+            <tr class="border-b border-dashed border-black">
+              <th class="py-2 px-2.5 text-left text-muted font-semibold">
+                Power / GPU
+              </th>
+              <td class="py-2 px-2.5">600 W</td>
+            </tr>
+            <tr>
+              <th class="py-2 px-2.5 text-left text-muted font-semibold">
+                Sharding
+              </th>
+              <td class="py-2 px-2.5">
+                Assume ideal linear sharding across GPUs
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="mb-4.5 mt-2">
+      <h3 class="m-0 mb-1.5 font-semibold underline">Calculations :</h3>
+      <div
+        class="font-mono bg-white/[0.02] p-3 rounded-lg overflow-auto text-sm space-y-1"
+      >
+        <p><strong>Weights:</strong></p>
+        <p>4,000,000,000,000 weights × 1 byte = 4,000 GB (≈4.0 TB)</p>
+
+        <p><strong>KV per token scaling:</strong></p>
+        <p>Reference: 2.5 MB/token @ 70B</p>
+        <p>Scale factor = (4T / 70B)^(2/3) ≈ 14.8357</p>
+        <p>KV per token ≈ 2.5 × 14.8357 ≈ 37.09 MB/token</p>
+
+        <p>
+          Total KV for 4,500 tokens ≈ 37.09 MB × 4,500 ≈ 167,401.6 MB ≈ 163.3 GB
+        </p>
+
+        <p>Overhead ≈ 15% of (weights + KV) ≈ 624.5 GB</p>
+
+        <p><strong>Total memory</strong> ≈ 4,787.8 GB (≈4.79 TB)</p>
+        <p>Min H100s (80GB each) = ceil(4,787.8 / 80) = 60 GPUs</p>
+
+        <p>
+          <strong>Total FLOPs</strong> = 2 × params × tokens = 36,000 TFLOPs
+        </p>
+        <p>Cluster TFLOPS = 400 × 60 = 24,000 TFLOPs</p>
+        <p>Latency ≈ 36,000 / 24,000 = 1.5 s</p>
+
+        <p>
+          <strong>Energy</strong> = Power × Time = (600 × 60) W × 1.5 s = 54,000
+          J = 15 Wh
+        </p>
+        <p>Cost @ $0.12/kWh in USA ≈ $0.0018 / request</p>
+      </div>
+    </div>
+    <div class="mt-2">
+      With all these calculations, according to reports India produces 1.5
+      Million engineers every year. If 50% of them subcribe to the mentioned
+      plan from OpenAI that would be 750000 * ₹399. But why does this matter?
+    </div>
+    <div class="mt-2">
+      <h3 class="font-semibold mb-2 underline">Scale Calculations :</h3>
+      <div
+        class="bg-white/[0.02] p-4 rounded-lg font-mono text-sm space-y-2 overflow-x-auto"
+      >
+        <div><strong>Daily Volume:</strong></div>
+        <div>750,000 users × 100 requests/day = 75,000,000 requests/day</div>
+
+        <div class="mt-3"><strong>Daily Energy Consumption:</strong></div>
+        <div>
+          75,000,000 requests × 0.015 kWh = 1,125,000 kWh = 1.125 GWh/day
+        </div>
+
+        <div class="mt-3"><strong>Daily Electricity Cost:</strong></div>
+        <div>75,000,000 requests × $0.0018 = $135,000/day</div>
+
+        <div class="mt-3"><strong>Processing Time Requirements:</strong></div>
+        <div>
+          75,000,000 × 1.5 seconds = 112.5 million seconds = 31,250 hours of
+          compute time
+        </div>
+        <div>
+          With 60 GPU cluster: 31,250 ÷ 60 = 520.8 hours of continuous operation
+          needed
+        </div>
+        <div>
+          That's 21.7 days of continuous operation to process one day's
+          requests!
+        </div>
+      </div>
+    </div>
+    <p>
+      On average, a US citizen consumes about 10,791 kWh annually (2022). My
+      instinct is that AI will create an artificial demand for energy that
+      pushes up the natural baseline of consumption. In the short run, this
+      could drive per-unit energy prices higher, since production needs to catch
+      up, much like the early days of cloud computing. But over time, while
+      total consumption will keep rising, the cost per task will fall as
+      efficiency improves and economies of scale kick in. Just as cloud created
+      entirely new roles, AI will also open up fresh opportunities, even as it
+      pressures existing ones. The real challenge is to stay in sync with this
+      progress — making sure AI remains a friend, not a foe, supporting us
+      without disrupting the very jobs it was meant to empower.
+    </p>
+    <p class="mt-2">
+      <strong class="text-xl font-bold">NOTE :</strong>
+      <i
+        >The above calculations are purely demonstrative and can be wrong in
+        many ways, It is just to showcase that employment of currently laid off
+        engineers is inevitable given the skills are upto the mark.</i
+      >
+    </p>
+  </section>
+
+  <!-- Right Section -->
+  <section
+    class="w-full md:w-1/2 mt-10 md:mt-14 px-4 md:px-14 flex flex-col items-center"
+  >
+    <img src="static/random1.jpeg" class="object-contain w-full h-auto" />
+    <i class="text-sm text-gray-600 mt-2">Art - From a different perspecitve</i>
+  </section>
+</div>

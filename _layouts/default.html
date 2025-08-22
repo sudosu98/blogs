@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
-  <body class="bg-gray-100 text-gray-800">
-    {% include navbar.html %} {{ content }}
+  <body class="min-h-screen flex flex-col">
+    <header>{% include navbar.html %}</header>
+    <main class="flex-1 mt-5 bg-white">{{ content }}</main>
+    <footer>{% include footer.html %}</footer>
   </body>
 </html>
