@@ -8,15 +8,18 @@ og_description: "Exploring the impact of Large Language Models on employment and
 <div class="flex flex-col md:flex-row w-screen overflow-x-hidden">
   <!-- Left Section -->
   <section class="p-4 mt-10 w-full md:w-1/2 flex flex-col items-start">
-    <h2 class="text-3xl font-bold">LLM's and Employment?</h2>
+    <h2 class="text-3xl font-bold">LLMs and Employment?</h2>
     <p>Aug 21, 2025</p>
 
     <p class="mt-4">
       Welcome to the age of LLMs. Half the population thinks LLMs think just
-      because they implemented a
+      because someone decided to put a
       <strong class="text-blue-600">&lt;Loader/&gt;</strong> after every prompt
-      that says “thinking...”. I’m not going to lie— it does give the appearance
-      of thinking.
+      that says “thinking...”.
+    </p>
+
+    <p class="mt-2">
+      I'm not going to lie — it does give the appearance of thinking.
     </p>
 
     <blockquote class="mt-2">
@@ -25,75 +28,97 @@ og_description: "Exploring the impact of Large Language Models on employment and
 
     <p class="mt-2">
       <i class="font-bold">AI Development = Speed + Thoughtful</i> decisions?
-      In my opinion, using AI in my development life cycle did drastically
-      improve at least one of the two while often contradicting each other.
+      In my opinion, using AI in my development life cycle drastically improved
+      at least one of the two, while often contradicting the other.
+    </p>
+
+    <p class="mt-2">
       What I mean by this is, I often found myself being fast with it or being
-      thoughtful with it and not both. <i>So the balance was missing</i>.
+      thoughtful with it, but not both.
+      <i>So the balance was missing.</i>
     </p>
 
     <p class="mt-2">
       Have you ever had a super junior intern working under you, and no matter
-      how much you explained, they’d just not understand? It’s not because you
-      cannot explain it well enough, nor because they are dumb enough to not
-      understand. It’s just that their brain has not yet been exposed to the
-      problem at hand — and it is way above their current understanding of
-      software.
+      how much you explained, they just don't understand?
     </p>
 
     <p class="mt-2">
-      That is somewhat how I see LLMs today. They can produce an answer that
-      looks incredibly confident and sophisticated, while still getting the
-      underlying problem completely wrong.
+      It's not because you cannot explain it well enough, nor because they are
+      dumb enough to not understand. It's just that their brain hasn't been
+      exposed to the problem at hand yet — and the problem is way above their
+      current understanding of software.
+    </p>
+
+    <p class="mt-2">
+      That's somewhat how I see LLMs today.
+    </p>
+
+    <p class="mt-2">
+      They can give you an answer that looks extremely confident and
+      sophisticated, and you can sit there thinking, “Damn, this thing knows
+      what it's doing.”
+    </p>
+
+    <p class="mt-2">
+      And then you run the code.
+    </p>
+
+    <p class="mt-2">
+      And everything explodes.
     </p>
 
     <p class="mt-2">
       In order to make these systems more useful, people started using RAG,
-      fine-tuning, reinforcement learning, tool use, and so on. But these are
-      not really the same thing.
+      fine-tuning, reinforcement learning, tool use, and a bunch of other
+      techniques.
     </p>
 
     <p class="mt-2">
-      RAG gives the model access to external information at inference time.
-      Fine-tuning changes the model itself by training it further on additional
-      data. Reinforcement learning uses feedback or reward signals to optimize
-      behaviour. They can all improve the usefulness of an LLM, but in very
-      different ways.
+      RAG gives the model some external information to work with. Fine-tuning
+      actually changes the model by training it further on additional data.
+      Reinforcement learning uses feedback or reward signals to push the model
+      towards certain behaviours.
     </p>
 
     <p class="mt-2">
-      And yes, at the foundation, an LLM is trained to predict tokens. But I
-      don't think saying <i>“it's predicting, not thinking”</i> completely
-      explains what is happening anymore.
+      So yes, at the very basic level, an LLM is predicting the next token.
+      But saying <i>“it's predicting, not thinking”</i> doesn't really explain
+      everything that's happening anymore.
     </p>
 
     <p class="mt-2">
-      Modern LLMs can generate intermediate reasoning steps, use tools, retrieve
-      information, write code, execute code, inspect the result and try again.
-      Whether we call that “thinking” or extremely sophisticated prediction is
-      almost a philosophical argument at this point.
+      Modern LLMs can break problems down, generate intermediate reasoning,
+      call tools, retrieve information, write code, run code and then use the
+      result to continue.
     </p>
 
     <p class="mt-2">
-      What matters to me is whether I can trust the result.
+      Whether you want to call that “thinking” or just really complicated
+      prediction is probably a conversation for another day.
     </p>
 
     <p class="mt-2">
-      The reason LLMs can sometimes appear to have emotions or personality is
-      also more complicated than simply having “high-level English grammar”.
-      They learn statistical patterns from enormous amounts of human-generated
-      data, including the way people express emotions, uncertainty, confidence,
-      humour, sarcasm and personality.
+      Personally, I care less about what we call it and more about one thing:
+      <strong>Can I trust the answer?</strong>
+    </p>
+
+    <p class="mt-2">
+      The reason LLMs can also appear to have emotions or personality is
+      interesting. They have been trained on an enormous amount of human
+      generated text, so they have picked up patterns in how humans express
+      things like humour, anger, excitement, uncertainty, sarcasm, confidence,
+      etc.
     </p>
 
     <p class="mt-2">
       So when I ask an LLM to be controversial and it responds with
-      <i>“Got it 😏”</i>, it isn't necessarily experiencing amusement or
-      excitement.
+      <i>“Got it 😏”</i>, it doesn't necessarily mean the machine is sitting
+      there enjoying the controversy.
     </p>
 
     <p class="mt-2">
-      It's producing a response that is statistically appropriate to the
-      context I gave it.
+      It's producing a response that fits the context.
     </p>
 
     <div class="mt-2">
@@ -102,6 +127,7 @@ og_description: "Exploring the impact of Large Language Models on employment and
         alt="when-i-asked-it-to-be-contrversial"
         class="border-2 w-full h-auto"
       />
+
       <p class="italic text-gray-400 text-sm">
         When I asked ChatGPT to fix the above paragraph and asked it to keep it
         controversial, it started with "Got it 😏"!
@@ -110,10 +136,18 @@ og_description: "Exploring the impact of Large Language Models on employment and
 
     <p class="mt-4 font-bold text-lg">
       With all that being said, how is the employment scenario looking?
-      OpenAI launched its ₹399/month plan in India in August 2025. Why is that
-      interesting? Let's do a hypothetical calculation — not because it will
-      tell us exactly how much an AI company spends, but because it gives us an
-      idea of the scale involved.
+      OpenAI launched its ₹399/month plan in India in August 2025 and honestly,
+      that got me thinking.
+    </p>
+
+    <p class="mt-2">
+      Why is it so interesting?
+    </p>
+
+    <p class="mt-2">
+      Let's do some completely hypothetical calculations. They might be wrong,
+      but I think they're useful just to get an idea of the scale we're talking
+      about.
     </p>
 
     <div class="mb-4.5 mt-2">
@@ -125,28 +159,29 @@ og_description: "Exploring the impact of Large Language Models on employment and
 
       <ul class="mt-2 space-y-1">
         <li class="text-sm">
-          <strong>Weights</strong>: the stored parameters of the model.
+          <strong>Weights</strong>: basically the stored parameters of the
+          model.
         </li>
 
         <li class="text-sm">
-          <strong>KV cache</strong>: attention-related state stored while
-          generating tokens, allowing the model to avoid recomputing previous
-          context.
+          <strong>KV cache</strong>: information the model keeps around while
+          generating tokens so it doesn't have to recompute everything from
+          scratch.
         </li>
 
         <li class="text-sm">
-          <strong>FLOPs</strong>: floating-point operations. A rough dense-model
-          estimate used below is 2 × parameters × tokens.
+          <strong>FLOPs</strong>: floating-point operations. I'm using
+          2 × parameters × tokens as a rough estimate for a dense model.
         </li>
 
         <li class="text-sm">
-          <strong>Latency</strong>: the time required to process a request.
-          Actual latency depends heavily on architecture, batching,
-          parallelism, memory bandwidth and utilization.
+          <strong>Latency</strong>: how long it takes to process a request.
+          Actual latency can be very different depending on how the model is
+          being served.
         </li>
 
         <li class="text-sm">
-          <strong>Energy</strong>: power × time, expressed here in Wh.
+          <strong>Energy</strong>: power × time, measured here in Wh.
         </li>
       </ul>
     </div>
@@ -179,9 +214,7 @@ og_description: "Exploring the impact of Large Language Models on employment and
               <th class="py-2 px-2.5 text-left text-muted font-semibold">
                 KV cache precision
               </th>
-              <td class="py-2 px-2.5">
-                FP16 (2 bytes / element) — illustrative
-              </td>
+              <td class="py-2 px-2.5">FP16 — just for this example</td>
             </tr>
 
             <tr class="border-b border-dashed border-black">
@@ -198,7 +231,7 @@ og_description: "Exploring the impact of Large Language Models on employment and
                 Hardware
               </th>
               <td class="py-2 px-2.5">
-                H100 SXM 80 GB — illustrative hardware
+                H100 SXM 80 GB — hypothetical
               </td>
             </tr>
 
@@ -207,7 +240,7 @@ og_description: "Exploring the impact of Large Language Models on employment and
                 Compute assumption
               </th>
               <td class="py-2 px-2.5">
-                400 TFLOPS / GPU effective throughput — illustrative only
+                400 TFLOPS / GPU — hypothetical effective throughput
               </td>
             </tr>
 
@@ -215,9 +248,7 @@ og_description: "Exploring the impact of Large Language Models on employment and
               <th class="py-2 px-2.5 text-left text-muted font-semibold">
                 Power / GPU
               </th>
-              <td class="py-2 px-2.5">
-                600 W — illustrative operating point
-              </td>
+              <td class="py-2 px-2.5">600 W — hypothetical</td>
             </tr>
 
             <tr>
@@ -225,7 +256,7 @@ og_description: "Exploring the impact of Large Language Models on employment and
                 Sharding
               </th>
               <td class="py-2 px-2.5">
-                Ideal linear sharding — intentionally optimistic
+                Assume ideal linear sharding
               </td>
             </tr>
           </tbody>
@@ -242,20 +273,26 @@ og_description: "Exploring the impact of Large Language Models on employment and
         class="font-mono bg-white/[0.02] p-3 rounded-lg overflow-auto text-sm space-y-2"
       >
         <p><strong>Weights:</strong></p>
+
         <p>
           4,000,000,000,000 weights × 1 byte
           = 4,000,000,000,000 bytes
-          ≈ 4 TB
+          ≈ <strong>4 TB</strong>
         </p>
 
         <p><strong>KV Cache:</strong></p>
 
         <p>
-          This is where things become architecture-dependent.
+          This is where things get messy.
         </p>
 
         <p>
-          A simplified KV-cache calculation is:
+          The KV cache depends heavily on the architecture of the model, the
+          context length, the number of KV heads and the precision being used.
+        </p>
+
+        <p>
+          A simplified version looks like:
         </p>
 
         <p>
@@ -263,50 +300,45 @@ og_description: "Exploring the impact of Large Language Models on employment and
         </p>
 
         <p>
-          The important part here is <strong>KV_heads</strong>, not simply the
-          number of attention heads. Modern architectures can use techniques
-          such as Grouped Query Attention (GQA), where the number of
-          key/value heads is smaller than the number of query heads.
+          My original calculation assumed 80 layers, 128 heads and a
+          128-dimensional head. The problem is that there is no good reason to
+          assume those exact numbers for an arbitrary 4T model.
         </p>
 
         <p>
-          Therefore, assuming “80 layers × 128 heads × 128 head_dim” for a
-          hypothetical 4T model would give a very specific number without
-          actually knowing the model architecture.
+          So I'm not going to pretend that the KV cache is exactly 11.8 GB.
         </p>
 
         <p>
-          For that reason, I won't pretend the KV cache is exactly 11.8 GB.
-          The real number depends on the architecture, context length,
-          precision and number of concurrent requests.
+          The important takeaway is simply that <strong>weights are not the
+          whole memory requirement</strong>.
         </p>
 
         <p>
-          <strong>Important:</strong> the 4 TB weight requirement is much more
-          robust than any specific KV-cache estimate here.
+          You also need memory for KV cache, activations, communication buffers,
+          runtime overhead and, in a real system, multiple users at the same
+          time.
         </p>
 
-        <p><strong>Theoretical weight-only GPU count:</strong></p>
+        <p><strong>Weight-only GPU requirement:</strong></p>
 
         <p>
           4,000 GB ÷ 80 GB ≈ <strong>50 H100 GPUs</strong>
         </p>
 
         <p>
-          But 50 GPUs is only a theoretical lower bound for the weights.
-          A production system needs additional memory for KV cache, activations,
-          runtime buffers, communication and concurrent users.
+          And again, that's just to hold the weights.
         </p>
 
         <p>
-          So the real number of GPUs required to serve a model cannot be
-          inferred from parameter count alone.
+          In reality you'd need more capacity depending on how the model is
+          sharded and how many requests you're serving at the same time.
         </p>
 
         <p><strong>Compute:</strong></p>
 
         <p>
-          For a rough dense-transformer estimate:
+          For a rough dense-model estimate:
         </p>
 
         <p>
@@ -320,16 +352,17 @@ og_description: "Exploring the impact of Large Language Models on employment and
         </p>
 
         <p>
-          This assumes a dense model where all 4T parameters participate in
-          every token. An MoE model with 4T total parameters could activate
-          only a fraction of them for each token, making this estimate
-          substantially different.
+          Again, this assumes a dense model. If the model were a Mixture-of-
+          Experts model, the number of parameters actually used for each token
+          could be much smaller than the total parameter count.
         </p>
 
-        <p><strong>And this is where the original calculation gets tricky:</strong></p>
+        <p>
+          Now, here's where the calculation becomes a little dangerous.
+        </p>
 
         <p>
-          It is tempting to say:
+          You might be tempted to say:
         </p>
 
         <p>
@@ -337,38 +370,44 @@ og_description: "Exploring the impact of Large Language Models on employment and
         </p>
 
         <p>
-          But this should <strong>not</strong> be interpreted as actual
-          end-to-end request latency.
+          And call that the latency.
         </p>
 
         <p>
-          Theoretical FLOPS are not the same as real LLM inference throughput.
-          Memory bandwidth, GPU utilization, communication overhead,
-          parallelism, batching and the difference between prefill and decode
-          all matter.
+          But that's not really how LLM inference works.
         </p>
 
         <p>
-          For example, an H100 SXM has 80 GB of GPU memory and up to 3.35 TB/s
-          of memory bandwidth, while its advertised tensor-core throughput
-          depends heavily on numerical precision and sparsity.
+          The advertised FLOPS of a GPU are not the same as the actual
+          end-to-end throughput you get while serving an LLM. Memory bandwidth,
+          GPU utilization, communication between GPUs, batching and the model
+          architecture all matter.
         </p>
 
         <p>
-          So the 1.55 second number is better understood as an
-          <strong>idealized arithmetic lower-bound-style calculation</strong>,
-          not a production latency estimate.
+          There are also two very different parts of inference:
+          <strong>prefill</strong>, where the model processes the input, and
+          <strong>decode</strong>, where it generates the response token by
+          token.
+        </p>
+
+        <p>
+          So I'm going to treat the 1.55 seconds as an idealized arithmetic
+          exercise rather than pretending it is the real latency of a request.
         </p>
 
         <p><strong>Energy:</strong></p>
 
         <p>
-          If, purely for the sake of the hypothetical calculation, we assume
-          58 GPUs operating at 600 W for 1.55 seconds:
+          If we still play along with the hypothetical:
         </p>
 
         <p>
-          Energy = 58 × 600 W × 1.55 s
+          Energy = Power × Time
+        </p>
+
+        <p>
+          = (58 × 600 W) × 1.55 s
         </p>
 
         <p>
@@ -377,19 +416,40 @@ og_description: "Exploring the impact of Large Language Models on employment and
         </p>
 
         <p>
-          Again, this is not a measurement of a real ChatGPT request.
-          It inherits all of the assumptions above.
+          And this is where I want to put a big asterisk.
+        </p>
+
+        <p>
+          <strong>14.9 Wh is not “the energy required for one ChatGPT
+          request”.</strong>
+        </p>
+
+        <p>
+          It is the result of our deliberately exaggerated hypothetical model
+          and the assumptions we made above.
         </p>
       </div>
     </div>
 
     <div class="mt-2">
       With all these calculations, according to commonly cited figures India
-      produces around 1.5 million engineering graduates every year. But rather
-      than assuming that half of them actually subscribe to an AI service and
-      send exactly 100 requests every day, let's treat the following as a
-      deliberately exaggerated scenario just to understand scale.
+      produces around 1.5 million engineering graduates every year.
     </div>
+
+    <p class="mt-2">
+      Now let's make another completely hypothetical assumption:
+      50% of them subscribe to an AI service and each user makes 100 requests
+      a day.
+    </p>
+
+    <p class="mt-2">
+      Is that realistic?
+      Probably not.
+    </p>
+
+    <p class="mt-2">
+      But let's see what the numbers look like anyway.
+    </p>
 
     <div class="mt-2">
       <h3 class="font-semibold mb-2 underline">Scale Calculations :</h3>
@@ -401,7 +461,7 @@ og_description: "Exploring the impact of Large Language Models on employment and
 
         <div>
           1,500,000 engineers × 50%
-          = 750,000 hypothetical users
+          = 750,000 users
         </div>
 
         <div class="mt-3">
@@ -418,30 +478,15 @@ og_description: "Exploring the impact of Large Language Models on employment and
         </div>
 
         <div>
-          If we use a hypothetical average of 0.3 Wh/request:
+          Instead of using our 14.9 Wh figure as if it were a real-world
+          measurement, let's use a deliberately simpler scenario of
+          <strong>0.3 Wh/request</strong>.
         </div>
 
         <div>
           75,000,000 × 0.3 Wh
           = 22,500,000 Wh
           = <strong>22.5 GWh/day</strong>
-        </div>
-
-        <div class="mt-3">
-          <strong>Why use a scenario instead of the earlier 14.9 Wh?</strong>
-        </div>
-
-        <div>
-          Because the 14.9 Wh figure came directly from an intentionally
-          extreme 4T-model calculation with idealized GPU assumptions. It
-          should not be treated as a measured energy cost for a production
-          chatbot request.
-        </div>
-
-        <div>
-          Actual inference energy varies substantially with model architecture,
-          prompt length, output length, reasoning effort, batching, hardware,
-          utilization and serving software.
         </div>
 
         <div class="mt-3">
@@ -457,37 +502,50 @@ og_description: "Exploring the impact of Large Language Models on employment and
           = <strong>$2,700/day</strong>
         </div>
 
+        <div class="mt-3">
+          <strong>And this is only electricity.</strong>
+        </div>
+
         <div>
-          This is only the electricity component and does not include the cost
-          of GPUs, networking, cooling, data-centre infrastructure, staff,
-          depreciation or other operating expenses.
+          It doesn't include the cost of GPUs, networking, cooling,
+          data-centre infrastructure, maintenance, depreciation or the people
+          required to run the whole thing.
         </div>
       </div>
     </div>
 
     <p class="mt-2">
-      The interesting part isn't really whether the number is 1 GWh, 10 GWh or
-      20 GWh. The interesting part is that inference at massive scale creates
-      a completely new industrial demand for electricity, compute, networking
-      and data-centre infrastructure.
+      On average, a US citizen consumes roughly 10,000+ kWh of electricity
+      annually. So when you start looking at AI usage at massive scale, the
+      numbers get interesting very quickly.
     </p>
 
     <p class="mt-2">
-      My instinct is that AI will create an artificial demand for energy that
-      pushes up the natural baseline of consumption. In the short run, this
-      could put pressure on grids and generation capacity, especially in
-      regions where data-centre demand grows faster than new supply.
+      My instinct is that AI will create an artificial demand for energy and
+      compute that pushes up the baseline of consumption.
     </p>
 
     <p class="mt-2">
-      But there is another side to this.
+      In the short run, this could put pressure on electricity generation and
+      grids, especially in places where data-centre demand grows faster than
+      new power capacity.
     </p>
 
     <p class="mt-2">
-      Over time, the cost of a unit of inference should fall as hardware,
-      model architectures, quantization, batching and serving systems improve.
-      We have already seen how quickly the cost of computation can change when
-      an industry starts optimizing around a workload.
+      But I also think the cost per task will keep falling.
+    </p>
+
+    <p class="mt-2">
+      Hardware gets better.
+      Models get smaller.
+      Quantization gets better.
+      Batching gets better.
+      Inference software gets better.
+      People figure out smarter ways to do the same thing with less compute.
+    </p>
+
+    <p class="mt-2">
+      We've seen this happen with computing before.
     </p>
 
     <p class="mt-2">
@@ -495,50 +553,58 @@ og_description: "Exploring the impact of Large Language Models on employment and
     </p>
 
     <p class="mt-2">
-      If the cost of producing software keeps falling, companies don't
-      necessarily have to choose between “same work with fewer engineers” and
-      “same engineers doing the same work”.
+      Imagine an engineer who used to spend four hours implementing a feature.
+      With AI assistance, maybe the first version now takes thirty minutes.
     </p>
 
     <p class="mt-2">
-      They can simply build more.
+      Does that mean we need 87.5% fewer engineers?
     </p>
 
     <p class="mt-2">
-      An engineer who previously took four hours to implement a feature might
-      now produce the first version in thirty minutes with AI assistance.
-      That does not automatically mean the company needs 87.5% fewer engineers.
-      It could mean the company expects more output from the same team.
+      Not necessarily.
     </p>
 
     <p class="mt-2">
-      Of course, some of the productivity gain can also translate directly into
-      fewer people being required for certain tasks.
+      The company could simply say:
+    </p>
+
+    <blockquote class="mt-2">
+      <strong>“Great. Now build more.”</strong>
+    </blockquote>
+
+    <p class="mt-2">
+      And that's the part I find interesting.
     </p>
 
     <p class="mt-2">
-      And this is where things get uncomfortable.
+      Productivity doesn't automatically mean unemployment.
+      Sometimes it means you produce the same thing with fewer people.
+      Sometimes it means you produce much more with the same people.
+      And sometimes it does a bit of both.
     </p>
 
     <p class="mt-2">
-      Current evidence suggests that the impact is likely to be uneven.
-      Routine programming work is easier to automate than architecture,
-      debugging, product decisions, system design and work that requires
-      responsibility for the final outcome.
+      I don't think anyone really knows yet how this will settle across the
+      entire software industry.
+    </p>
+
+    <p class="mt-2">
+      But there are already some interesting signals.
     </p>
 
     <p class="mt-2">
       The U.S. Bureau of Labor Statistics currently projects software developer
-      employment to grow by 15.8% from 2024 to 2034, while computer programmer
-      employment is projected to decline by 6% over the same period.
+      employment to grow by 15.8% between 2024 and 2034, while traditional
+      computer programmer employment is projected to decline by 6%.
     </p>
 
     <p class="mt-2">
-      That's an interesting distinction.
+      That's a pretty interesting distinction.
     </p>
 
     <p class="mt-2">
-      Maybe the market isn't asking:
+      Maybe the question isn't:
     </p>
 
     <blockquote class="mt-2">
@@ -546,7 +612,7 @@ og_description: "Exploring the impact of Large Language Models on employment and
     </blockquote>
 
     <p class="mt-2">
-      Maybe it is increasingly asking:
+      Maybe the question is:
     </p>
 
     <blockquote class="mt-2">
@@ -558,54 +624,22 @@ og_description: "Exploring the impact of Large Language Models on employment and
     </p>
 
     <p class="mt-2">
-      And that is why I don't think the answer is simply “AI will replace
-      engineers”.
+      The engineer who spends most of their time writing boilerplate code might
+      become less valuable.
     </p>
 
     <p class="mt-2">
-      I think AI will replace <i>some tasks</i>, change the expectations of
-      engineers and potentially shrink some categories of jobs while creating
-      demand for others.
+      But the engineer who understands the system, knows what actually needs to
+      be built, can review AI-generated code, can debug the weird stuff and can
+      take responsibility when something breaks?
     </p>
 
     <p class="mt-2">
-      The engineer who only knows how to write boilerplate code may become less
-      valuable.
+      I don't think that person is going away anytime soon.
     </p>
 
     <p class="mt-2">
-      The engineer who understands the system, can judge whether an AI-generated
-      solution is correct, can make architectural decisions and can take
-      responsibility when something breaks may become considerably more
-      valuable.
-    </p>
-
-    <p class="mt-2">
-      Just as cloud computing created entirely new roles while automating parts
-      of traditional infrastructure work, AI will likely do something similar
-      to software development.
-    </p>
-
-    <p class="mt-2">
-      Some jobs will disappear.
-    </p>
-
-    <p class="mt-2">
-      Some will shrink.
-    </p>
-
-    <p class="mt-2">
-      Some will become more valuable.
-    </p>
-
-    <p class="mt-2">
-      And some jobs will appear that we don't even have names for yet.
-    </p>
-
-    <p class="mt-2">
-      The real challenge is to stay in sync with this progress — making sure
-      AI remains a friend, not a foe, supporting us without making us obsolete
-      in the process.
+      In fact, they might become even more valuable.
     </p>
 
     <p class="mt-2">
@@ -613,7 +647,7 @@ og_description: "Exploring the impact of Large Language Models on employment and
     </p>
 
     <p class="mt-2">
-      Maybe it is replacing the <strong>unit of work</strong>.
+      Maybe it's replacing the <strong>unit of work</strong>.
     </p>
 
     <p class="mt-2">
@@ -630,7 +664,7 @@ og_description: "Exploring the impact of Large Language Models on employment and
     </p>
 
     <p class="mt-2">
-      And if generating code costs almost nothing, the expensive part becomes
+      If generating code costs almost nothing, the expensive part becomes
       knowing what to build, why to build it, whether it is correct, whether it
       is secure, whether it scales, whether users actually need it — and who is
       responsible when it breaks.
@@ -658,7 +692,8 @@ og_description: "Exploring the impact of Large Language Models on employment and
     </p>
 
     <p class="mt-2">
-      Learn how to look at an AI-generated solution and say:
+      And most importantly, learn how to look at an AI-generated solution and
+      say:
     </p>
 
     <blockquote class="mt-2">
@@ -666,24 +701,29 @@ og_description: "Exploring the impact of Large Language Models on employment and
     </blockquote>
 
     <p class="mt-2">
-      And more importantly:
+      And then:
     </p>
 
     <blockquote class="mt-2">
       <strong>“Here's why it's wrong.”</strong>
     </blockquote>
 
+    <p class="mt-2">
+      Because if AI is going to make writing code cheaper, then understanding
+      code is probably going to become more important, not less.
+    </p>
+
     <p class="mt-4">
       <strong class="text-xl font-bold">NOTE :</strong>
       <i>
-        The calculations above are intentionally hypothetical. They are meant
-        to demonstrate the scale of LLM inference, not to estimate the actual
-        architecture, GPU count, latency, electricity consumption or cost of
-        any particular commercial AI service. The employment outcome is also
-        not predetermined. AI is likely to automate some tasks, augment others,
-        and create entirely new categories of work. The important question is
-        not whether every engineer will lose their job, but whether the skills
-        that make an engineer valuable will change.
+        The calculations above are purely demonstrative. They are meant to give
+        an idea of the scale involved in running LLMs and are not an estimate of
+        the actual architecture, GPU count, latency, energy consumption or
+        cost of any particular AI service. The employment outcome is also not
+        predetermined. Some tasks will probably disappear, some will become
+        easier, and some completely new work will be created. My main point is
+        simply that engineers who adapt to this change are likely to be in a
+        much better position than engineers who don't.
       </i>
     </p>
   </section>
