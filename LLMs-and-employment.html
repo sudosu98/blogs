@@ -134,6 +134,13 @@ og_description: "Exploring the impact of Large Language Models on employment and
       </p>
     </div>
 
+    <p class="mt-2">
+      Which is exactly why the more interesting question, at least to me,
+      isn't whether LLMs "think." It's what happens to the economics of
+      building software once something that produces confident, humanlike
+      answers gets this cheap and this available.
+    </p>
+
     <p class="mt-4 font-bold text-lg">
       With all that being said, how is the employment scenario looking?
       OpenAI launched its ₹399/month plan in India in August 2025 and honestly,
@@ -148,6 +155,12 @@ og_description: "Exploring the impact of Large Language Models on employment and
       Let's do some completely hypothetical calculations. They might be wrong,
       but I think they're useful just to get an idea of the scale we're talking
       about.
+    </p>
+
+    <p class="mt-2 italic text-gray-400 text-sm">
+      Quick disclaimer before we get into it: none of the numbers below are a
+      real estimate of any specific model, GPU, or AI service. They're just a
+      way to get a feel for the order of magnitude involved.
     </p>
 
     <div class="mb-4.5 mt-2">
@@ -366,11 +379,12 @@ og_description: "Exploring the impact of Large Language Models on employment and
         </p>
 
         <p>
-          36,000 TFLOPs ÷ 23,200 TFLOPS ≈ 1.55 seconds
+          36,000 TFLOPs ÷ 20,000 TFLOPS ≈ 1.8 seconds
         </p>
 
         <p>
-          And call that the latency.
+          (that denominator is our 50 GPUs from above, each at 400 TFLOPS)
+          and call that the latency.
         </p>
 
         <p>
@@ -392,14 +406,15 @@ og_description: "Exploring the impact of Large Language Models on employment and
         </p>
 
         <p>
-          So I'm going to treat the 1.55 seconds as an idealized arithmetic
+          So I'm going to treat the 1.8 seconds as an idealized arithmetic
           exercise rather than pretending it is the real latency of a request.
         </p>
 
         <p><strong>Energy:</strong></p>
 
         <p>
-          If we still play along with the hypothetical:
+          If we still play along with the hypothetical, using the same 50
+          GPUs:
         </p>
 
         <p>
@@ -407,12 +422,12 @@ og_description: "Exploring the impact of Large Language Models on employment and
         </p>
 
         <p>
-          = (58 × 600 W) × 1.55 s
+          = (50 × 600 W) × 1.8 s
         </p>
 
         <p>
-          ≈ 53,736 J
-          ≈ <strong>14.9 Wh</strong>
+          ≈ 54,000 J
+          ≈ <strong>15 Wh</strong>
         </p>
 
         <p>
@@ -420,7 +435,7 @@ og_description: "Exploring the impact of Large Language Models on employment and
         </p>
 
         <p>
-          <strong>14.9 Wh is not “the energy required for one ChatGPT
+          <strong>15 Wh is not “the energy required for one ChatGPT
           request”.</strong>
         </p>
 
@@ -478,7 +493,7 @@ og_description: "Exploring the impact of Large Language Models on employment and
         </div>
 
         <div>
-          Instead of using our 14.9 Wh figure as if it were a real-world
+          Instead of using our 15 Wh figure as if it were a real-world
           measurement, let's use a deliberately simpler scenario of
           <strong>0.3 Wh/request</strong>.
         </div>
@@ -546,6 +561,13 @@ og_description: "Exploring the impact of Large Language Models on employment and
 
     <p class="mt-2">
       We've seen this happen with computing before.
+    </p>
+
+    <p class="mt-2">
+      The exact numbers above don't matter — what matters is that running AI
+      at scale is expensive today and getting cheaper fast. And it's that
+      falling cost curve, not some fixed ceiling on what AI can do, that's
+      actually reshaping the job.
     </p>
 
     <p class="mt-2">
@@ -713,33 +735,26 @@ og_description: "Exploring the impact of Large Language Models on employment and
       code is probably going to become more important, not less.
     </p>
 
-    <p class="mt-4">
-      <strong class="text-xl font-bold">NOTE :</strong>
-      <i>
-        The calculations above are purely demonstrative. They are meant to give
-        an idea of the scale involved in running LLMs and are not an estimate of
-        the actual architecture, GPU count, latency, energy consumption or
-        cost of any particular AI service. The employment outcome is also not
-        predetermined. Some tasks will probably disappear, some will become
-        easier, and some completely new work will be created. My main point is
-        simply that engineers who adapt to this change are likely to be in a
-        much better position than engineers who don't.
-      </i>
+    <p class="mt-4 italic text-sm text-gray-400">
+      <strong>NOTE:</strong> The calculations above are purely demonstrative.
+      They are meant to give an idea of the scale involved in running LLMs
+      and are not an estimate of the actual architecture, GPU count, latency,
+      energy consumption or cost of any particular AI service. The employment
+      outcome is also not predetermined. Some tasks will probably disappear,
+      some will become easier, and some completely new work will be created.
+      My main point is simply that engineers who adapt to this change are
+      likely to be in a much better position than engineers who don't.
     </p>
-  </section>
 
-  <!-- Right Section -->
-  <section
-    class="w-full md:w-1/2 mt-10 md:mt-14 px-4 md:px-14 flex flex-col items-center"
-  >
-    <img
-      src="static/random1.jpeg"
-      class="object-contain w-full h-auto"
-      alt="Art from a different perspective"
-    />
-
-    <i class="text-sm text-gray-600 mt-2">
-      Art - From a different perspective
-    </i>
+    <div class="mt-4">
+      <img
+        src="static/random1.jpeg"
+        alt="Art from a different perspective"
+        class="border-2 w-full h-auto"
+      />
+      <p class="italic text-gray-400 text-sm">
+        Art - From a different perspective
+      </p>
+    </div>
   </section>
 </div>
